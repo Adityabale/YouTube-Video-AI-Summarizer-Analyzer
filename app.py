@@ -1,7 +1,8 @@
 import os
 from flask import Flask, request, render_template, jsonify
 from utils import extract_video_id, get_youtube_transcript, format_prompt, get_video_title, sanitize_filename
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from dotenv import load_dotenv
 
 # Load environment variables (from .env file if it exists)
@@ -9,10 +10,11 @@ load_dotenv()
 
 app = Flask(__name__)
 
-# Configure Gemini API
+# Initialize Gemini Client
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+client = None
 if GEMINI_API_KEY:
-    genai.configure(api_key=GEMINI_API_KEY)
+    client = genai.Client(api_key=GEMINI_API_KEY)
 else:
     print("WARNING: GEMINI_API_KEY not found in environment variables.")
 
@@ -40,14 +42,15 @@ def process():
         return jsonify({"error": "Could not fetch transcript for this video."}), 400
 
     try:
-        # Initialize the model
-        model = genai.GenerativeModel('gemini-2.5-flash-lite')
-        
-        # Format the prompt
-        prompt = format_prompt(transcript)
-        
-        # Generate content
-        response = model.generate_content(prompt)
+        # Generate content using the new SDK
+        response = client.models.generate_content(
+            model='gemini-2.5-flash-lite',
+            contents=format_prompt(transcript),
+            config=types.GenerateContentConfig(
+                temperature=0.7,
+                max_output_tokens=3000
+            )
+        )
         
         # Save transcript and analysis report
         video_title = get_video_title(url)
