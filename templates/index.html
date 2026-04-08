@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube AI Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Marked.js for Markdown Rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <div class="container">
+        <header>
+            <h1>YouTube <span class="accent"> AI SUMMARIZER</span></h1>
+            <p>Paste a YouTube URL below to extract the transcript and generate an AI-powered analysis.</p>
+        </header>
+
+        <main>
+            <div class="glass-card input-section">
+                <div class="input-group">
+                    <input type="text" id="youtube-url"
+                        placeholder="Paste YouTube Link (e.g., https://www.youtube.com/watch?v=... )"
+                        aria-label="YouTube URL">
+                    <button id="analyze-btn">Analyze Video</button>
+                </div>
+                <div id="status-message" class="status"></div>
+            </div>
+
+            <div id="loading" class="loading-container hidden">
+                <div class="loader"></div>
+                <p>AI is processing the transcript... This might take a few seconds.</p>
+            </div>
+
+            <div id="results" class="results-container hidden">
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="showTab('summary-tab')">Analysis Report</button>
+                    <button class="tab-btn" onclick="showTab('transcript-tab')">Full Transcript</button>
+                </div>
+
+                <div id="summary-tab" class="tab-content glass-card active">
+                    <!-- AI Content will be injected here -->
+                    <div id="ai-analysis"></div>
+                </div>
+
+                <div id="transcript-tab" class="tab-content glass-card">
+                    <h3>Full Transcript</h3>
+                    <div id="transcript-text" class="transcript-box"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 AFCONS | Powered by Google Gemini AI</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
