@@ -1,6 +1,7 @@
 import os
 from flask import Flask, request, render_template, jsonify
 from utils import extract_video_id, get_youtube_transcript, format_prompt, get_video_title, sanitize_filename
+from evaluation_utils import evaluate_summary
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
@@ -73,11 +74,15 @@ def process():
             f.write(f"**Original Video:** {url}\n\n")
             f.write(response.text)
         
-        # Return the transcript and the AI's HTML analysis
+        # Evaluate the summary using MLflow
+        metrics = evaluate_summary(transcript, response.text)
+        
+        # Return the transcript, AI analysis and quality metrics
         return jsonify({
             "transcript": transcript,
             "analysis_html": response.text,
-            "video_title": video_title
+            "video_title": video_title,
+            "metrics": metrics
         })
     except Exception as e:
         print(f"Error calling Gemini API: {e}")

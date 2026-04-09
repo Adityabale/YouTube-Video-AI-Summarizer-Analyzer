@@ -1,0 +1,34 @@
+execution_duration_ms: 0
+request_preview: '{"query": "[Music] The udhampur shagar baramula Rail Link usbrl
+  project is one of independent India''s most challenging and important infrastructure
+  projects one of the most challenging parts of this project is a single Arch Bridge
+  over River chub coming up between and Buckle in rasi [Music] District on completion
+  it will be the tallest railway bridge in the world standing at 359 M it will be
+  35 M higher than the Eiffel Tower but this bridge is a world beating project not
+  just for its height its design and construction are very special and unlike anything
+  anywhere in the world it is the first bridge in India designed for contact blast
+  load the bridge will be able to withstand an earthquake of intensity 8 on the RoR
+  scale the location of the bridge exposes it to Gale winds the design takes this
+  into account and trains will be able to ply on it safely in winds up to 90 km/ hour
+  beyond the safe limit the sensors provided on the bridge will activate the signals
+  automatically which in tur...'
+request_time: '2026-04-08T13:57:34.540Z'
+response_preview: '"# Analysis of Udhampur-Srinagar-Baramulla Rail Link (USRL) Project
+  - Chenab Bridge\n\n## Summary\n\nThis video transcript details the Udhampur-Srinagar-Baramulla
+  Rail Link (USRL) project, focusing specifically on the Chenab Bridge, one of its
+  most challenging components. The Chenab Bridge is set to be the world''s tallest
+  railway bridge, standing at 359 meters. Beyond its height, the bridge is notable
+  for its advanced design, engineered to withstand extreme conditions such as seismic
+  activity (intensity 8 on the Richter scale), gale winds up to 90 km/hour, and blast
+  loads. The construction presents significant challenges due to the steep Himalayan
+  terrain, with slopes ranging from 43° to 77°. Solutions involve extensive slope
+  stabilization measures, including elaborate testing, design by the Indian Institute
+  of Science Bangalore (proof-checked by URS), and meticulous construction techniques
+  like the top-down method, presplitting, controlled blasting, rock bolting, and shotcreting
+  wi...'
+state: OK
+trace_id: tr-0525de83dc70a190d78f5d62e18f9d48
+trace_location:
+  mlflow_experiment:
+    experiment_id: '0'
+  type: MLFLOW_EXPERIMENT

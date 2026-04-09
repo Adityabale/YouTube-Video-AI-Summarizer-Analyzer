@@ -1,0 +1,33 @@
+execution_duration_ms: 1
+request_preview: '{"query": "[Music] The udhampur shagar baramula Rail Link usbrl
+  project is one of independent India''s most challenging and important infrastructure
+  projects one of the most challenging parts of this project is a single Arch Bridge
+  over River chub coming up between and Buckle in rasi [Music] District on completion
+  it will be the tallest railway bridge in the world standing at 359 M it will be
+  35 M higher than the Eiffel Tower but this bridge is a world beating project not
+  just for its height its design and construction are very special and unlike anything
+  anywhere in the world it is the first bridge in India designed for contact blast
+  load the bridge will be able to withstand an earthquake of intensity 8 on the RoR
+  scale the location of the bridge exposes it to Gale winds the design takes this
+  into account and trains will be able to ply on it safely in winds up to 90 km/ hour
+  beyond the safe limit the sensors provided on the bridge will activate the signals
+  automatically which in tur...'
+request_time: '2026-04-08T13:56:35.503Z'
+response_preview: '"## Summary:\n\nThe YouTube transcript details the Udhampur-Srinagar-Baramulla
+  Rail Link (USRL) project, focusing specifically on the Chenab Rail Bridge, its tallest
+  railway bridge in the world. The bridge''s immense height (359m), its design to
+  withstand blast loads and earthquakes (up to intensity 8 on the Richter scale),
+  and its ability to function safely in high winds (up to 90 km/hour) are highlighted.
+  The transcript emphasizes the significant technical challenges posed by the Himalayan
+  terrain, particularly the steep and unstable slopes, and the sophisticated methods
+  employed for slope stabilization and foundation construction. These include detailed
+  geological testing, expert design by IISc Bangalore and URS, development of extensive
+  approach roads, catch trenches, and the use of a top-down construction method with
+  controlled blasting and presplitting. The installation of rock bolts, shotcrete
+  with steel fiber reinforcement, and drainage systems are crucial for slope stability...'
+state: OK
+trace_id: tr-f3391c0b6f2cb49a92759d118a2461b7
+trace_location:
+  mlflow_experiment:
+    experiment_id: '0'
+  type: MLFLOW_EXPERIMENT

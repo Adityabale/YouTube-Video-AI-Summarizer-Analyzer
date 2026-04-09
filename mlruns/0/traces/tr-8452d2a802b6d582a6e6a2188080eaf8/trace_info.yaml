@@ -1,0 +1,12 @@
+execution_duration_ms: 1
+request_preview: '{"query": "This is a video about building a house. First you lay
+  the foundation, then you build walls."}'
+request_time: '2026-04-09T09:13:08.216Z'
+response_preview: '"A video guide on house construction starting with foundation and
+  walls."'
+state: OK
+trace_id: tr-8452d2a802b6d582a6e6a2188080eaf8
+trace_location:
+  mlflow_experiment:
+    experiment_id: '0'
+  type: MLFLOW_EXPERIMENT

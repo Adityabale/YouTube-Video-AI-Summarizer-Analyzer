@@ -1,0 +1,10 @@
+execution_duration_ms: 1
+request_preview: '{"query": "test"}'
+request_time: '2026-04-08T13:53:16.500Z'
+response_preview: '"test"'
+state: OK
+trace_id: tr-4a1115dbeefee70b7b821762a0143fac
+trace_location:
+  mlflow_experiment:
+    experiment_id: '0'
+  type: MLFLOW_EXPERIMENT

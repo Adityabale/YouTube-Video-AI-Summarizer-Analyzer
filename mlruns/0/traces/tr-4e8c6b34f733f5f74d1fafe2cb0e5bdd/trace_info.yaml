@@ -1,0 +1,34 @@
+execution_duration_ms: 0
+request_preview: '{"query": "foreign [Music] Highway in Himachal Pradesh is open for
+  traffic it will give a significant boost to tourism with the new all-weather connectivity
+  it will reduce travel time from Monday to Manali by more than 60 minutes most importantly
+  it will make movement easy for the Armed Forces [Music] while moving to forward
+  areas like lay but it is the speed of the project in a treacherous mountain region
+  that will raise eyebrows [Music] many civil engineering difficulties poor geology
+  hilly Terrain harsh climate pandemic induced delays and a busy highway the project
+  has taken a little over five years to build statistically this can be one of the
+  most challenging Hill Road projects ever because the project features are just mind-boggling
+  10 tunnels one elevated Viaduct three major Bridges ten minor Bridges and two laning
+  of more than 13 kilometers of highways [Music] for its history the Pandora arts
+  section of National Highway 21 has been notorious for rock falls and devastating
+  la...'
+request_time: '2026-04-08T12:45:15.366Z'
+response_preview: '"## Summary\n\nThis YouTube video discusses the construction of
+  a significant highway project in Himachal Pradesh, India, which aims to improve
+  tourism, reduce travel time to Manali, and facilitate movement for the Armed Forces.
+  The project, completed in just over five years, is highlighted as one of the most
+  challenging hill road projects ever undertaken due to numerous civil engineering
+  difficulties. These include poor geology, treacherous mountain terrain, harsh climate,
+  pandemic-induced delays, and the need to work alongside a busy existing highway.
+  Key features of the project include the construction of 10 tunnels, one elevated
+  viaduct, and multiple bridges. Notably, the tunnels are among the largest cross-sectional
+  tunnels in the Himalayan region, with diameters of 13.8 meters. The construction
+  employed the New Austrian Tunneling Methodology (NATM) due to unstable geology and
+  the presence of residential areas and farmlands, making Tunnel Boring Machines (TBMs)
+  unsuitable. The ...'
+state: OK
+trace_id: tr-4e8c6b34f733f5f74d1fafe2cb0e5bdd
+trace_location:
+  mlflow_experiment:
+    experiment_id: '0'
+  type: MLFLOW_EXPERIMENT

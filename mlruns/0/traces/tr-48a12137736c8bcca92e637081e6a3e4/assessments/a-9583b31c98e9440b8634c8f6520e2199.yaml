@@ -1,0 +1,19 @@
+assessment_id: a-9583b31c98e9440b8634c8f6520e2199
+assessment_name: relevance_to_query
+create_time: '2026-04-09T09:06:43.802Z'
+feedback:
+  value: 'yes'
+last_update_time: '2026-04-09T09:06:43.802Z'
+metadata:
+  mlflow.assessment.sourceRunId: e51111b980b0429896b1ee0d91f57665
+rationale: The question states that the video is about building a house and mentions
+  the initial steps of laying the foundation and building walls. The answer states
+  that it is a video guide on house construction starting with foundation and walls.
+  Both the question and the answer mention house construction, foundation, and walls,
+  indicating relevance.
+source:
+  source_id: gemini:/gemini-2.5-flash-lite
+  source_type: LLM_JUDGE
+span_id: b1e1e655fd9c486f
+trace_id: tr-48a12137736c8bcca92e637081e6a3e4
+valid: true

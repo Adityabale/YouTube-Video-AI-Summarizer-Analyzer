@@ -1,0 +1,127 @@
+assessment_id: a-0090924c403e4faaa9764c7cb5f807dc
+assessment_name: completeness
+create_time: '2026-04-08T14:01:27.091Z'
+feedback:
+  error:
+    error_code: SCORER_ERROR
+    error_message: "Failed to call LLM endpoint at https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent.\n-
+      Error: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent\n-
+      Response body: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-pro
+      is not found for API version v1beta, or is not supported for generateContent.
+      Call ListModels to see the list of available models and their supported methods.\",\n
+      \   \"status\": \"NOT_FOUND\"\n  }\n}\n\n- Input payload: {'contents': [{'role':
+      'user', 'parts': [{'text': 'inputs: {\\n  \"query\": \"This is a test transcript.\"\\n}\\noutputs:
+      \"This is a test summary.\"'}]}], 'system_instruction': {'parts': [{'text':
+      'You are an expert judge tasked with evaluating the performance of an AI\\nagent
+      on a particular query. You will be given instructions that describe the criteria
+      and\\nmethodology for evaluating the agent\\'s performance on the query.\\n\\nYour
+      task: Consider the following user prompt and assistant response.\\nYou must
+      decide whether the assistant successfully addressed all explicit requests in
+      the user\\'s prompt.\\nOutput only \"yes\" or \"no\" based on whether the conversation
+      is complete or incomplete according to the criteria below.\\n\\nFirst, list
+      all explicit user requests made in the user prompt.\\nSecond, for each request,
+      determine whether it was addressed by the assistant response.\\nDo not evaluate
+      factual correctness, style, or usefulness beyond whether each request was directly
+      handled.\\nIf the assistant refuses but gives a clear and explicit explanation
+      for the refusal, treat the response as complete;\\nif it refuses without providing
+      any reasoning, treat it as incomplete.\\nIf the assistant indicates it is missing
+      information and asks the user for the necessary details instead of answering,
+      treat this as complete.\\nIf any explicit request in the user prompt is ignored,
+      or handled in a way that does not match the user\\'s instructions, treat the
+      response as incomplete.\\nDo not make assumptions or bring in external knowledge.\\n\\n<question>{{inputs}}</question>\\n<answer>{{outputs}}</answer>\\n.\\n\\nYou
+      *must* format your evaluation rating as a JSON object with the following fields
+      (no markdown). Pay close attention to the field type of the evaluation rating
+      (string, boolean, numeric, etc.), and ensure that it conforms to the instructions.\\n\\n-
+      result (Literal[\\'yes\\', \\'no\\']): The evaluation rating/result\\n- rationale
+      (str): Detailed explanation for the evaluation'}]}, 'generationConfig': {'responseJsonSchema':
+      {'properties': {'result': {'description': 'The evaluation rating/result', 'enum':
+      ['yes', 'no'], 'title': 'Result', 'type': 'string'}, 'rationale': {'description':
+      'Detailed explanation for the evaluation', 'title': 'Rationale', 'type': 'string'}},
+      'required': ['result', 'rationale'], 'title': 'ResponseFormat', 'type': 'object'},
+      'responseMimeType': 'application/json'}}."
+    stack_trace: "Traceback (most recent call last):\n  File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\metrics\\genai\\model_utils.py\",
+      line 500, in _send_request\n    response.raise_for_status()\n  File \"C:\\Users\\Aditya
+      Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\requests\\models.py\",
+      line 1028, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError:
+      404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent\n\nThe
+      above exception was the direct cause of the following exception:\n\nTraceback
+      (most recent call last):\n  File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\harness.py\",
+      line 869, in run_scorer\n    value = call_with_retry(\n            ^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\rate_limiter.py\",
+      line 178, in call_with_retry\n    result = fn()\n             ^^^^\n  File \"C:\\Users\\Aditya
+      Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\harness.py\",
+      line 870, in <lambda>\n    lambda: _invoke_scorer(scorer_func, eval_item), rate_limiter,
+      max_retries\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Aditya
+      Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\harness.py\",
+      line 840, in _invoke_scorer\n    return scorer_func(\n           ^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\scorers\\base.py\",
+      line 497, in run\n    result = self(**filtered)\n             ^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\scorers\\base.py\",
+      line 167, in wrapper\n    return telemetry_wrapped(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\telemetry\\track.py\",
+      line 24, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\scorers\\builtin_scorers.py\",
+      line 3060, in __call__\n    return self._get_judge()(\n           ^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\scorers\\base.py\",
+      line 162, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\instructions_judge\\__init__.py\",
+      line 633, in __call__\n    return invoke_judge_model(\n           ^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\telemetry\\track.py\",
+      line 24, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\utils\\invocation_utils.py\",
+      line 99, in invoke_judge_model\n    output = adapter.invoke(input_params)\n
+      \            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\adapters\\base_adapter.py\",
+      line 131, in invoke\n    output = self._invoke(input_params)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\adapters\\gateway_adapter.py\",
+      line 377, in _invoke\n    response = _invoke_via_gateway(\n               ^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\adapters\\gateway_adapter.py\",
+      line 312, in _invoke_via_gateway\n    return _call_llm_provider_api(\n           ^^^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\metrics\\genai\\model_utils.py\",
+      line 272, in _call_llm_provider_api\n    response = _send_request(\n               ^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\metrics\\genai\\model_utils.py\",
+      line 503, in _send_request\n    raise MlflowException(\nmlflow.exceptions.MlflowException:
+      Failed to call LLM endpoint at https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent.\n-
+      Error: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent\n-
+      Response body: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-pro
+      is not found for API version v1beta, or is not supported for generateContent.
+      Call ListModels to see the list of available models and their supported methods.\",\n
+      \   \"status\": \"NOT_FOUND\"\n  }\n}\n\n- Input payload: {'contents': [{'role':
+      'user', 'parts': [{'text': 'inputs: {\\n  \"query\": \"This is a test transcript.\"\\n}\\noutputs:
+      \"This is a test summary.\"'}]}], 'system_instruction': {'parts': [{'text':
+      'You are an expert judge tasked with evaluating the performance of an AI\\nagent
+      on a particular query. You will be given instructions that describe the criteria
+      and\\nmethodology for evaluating the agent\\'s performance on the query.\\n\\nYour
+      task: Consider the following user prompt and assistant response.\\nYou must
+      decide whether the assistant successfully addressed all explicit requests in
+      the user\\'s prompt.\\nOutput only \"yes\" or \"no\" based on whether the conversation
+      is complete or incomplete according to the criteria below.\\n\\nFirst, list
+      all explicit user requests made in the user prompt.\\nSecond, for each request,
+      determine whether it was addressed by the assistant response.\\nDo not evaluate
+      factual correctness, style, or usefulness beyond whether each request was directly
+      handled.\\nIf the assistant refuses but gives a clear and explicit explanation
+      for the refusal, treat the response as complete;\\nif it refuses without providing
+      any reasoning, treat it as incomplete.\\nIf the assistant indicates it is missing
+      information and asks the user for the necessary details instead of answering,
+      treat this as complete.\\nIf any explicit request in the user prompt is ignored,
+      or handled in a way that does not match the user\\'s instructions, treat the
+      response as incomplete.\\nDo not make assumptions or bring in external knowledge.\\n\\n<question>{{inputs}}</question>\\n<answer>{{outputs}}</answer>\\n.\\n\\nYou
+      *must* format your evaluation rating as a JSON object with the following fields
+      (no markdown). Pay close attention to the field type of the evaluation rating
+      (string, boolean, numeric, etc.), and ensure that it conforms to the instructions.\\n\\n-
+      result (Literal[\\'yes\\', \\'no\\']): The evaluation rating/result\\n- rationale
+      (str): Detailed explanation for the evaluation'}]}, 'generationConfig': {'responseJsonSchema':
+      {'properties': {'result': {'description': 'The evaluation rating/result', 'enum':
+      ['yes', 'no'], 'title': 'Result', 'type': 'string'}, 'rationale': {'description':
+      'Detailed explanation for the evaluation', 'title': 'Rationale', 'type': 'string'}},
+      'required': ['result', 'rationale'], 'title': 'ResponseFormat', 'type': 'object'},
+      'responseMimeType': 'application/json'}}.\n"
+  value: null
+last_update_time: '2026-04-08T14:01:27.091Z'
+metadata:
+  mlflow.assessment.sourceRunId: 057504c70c8b48179efcda70a918452b
+source:
+  source_id: completeness
+  source_type: CODE
+span_id: f3461db46ed6196b
+trace_id: tr-79403674ffd1d8fa5db10662f0ba6f44
+valid: true

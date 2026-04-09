@@ -1,0 +1,33 @@
+execution_duration_ms: 1
+request_preview: '{"query": "foreign [Music] Highway in Himachal Pradesh is open for
+  traffic it will give a significant boost to tourism with the new all-weather connectivity
+  it will reduce travel time from Monday to Manali by more than 60 minutes most importantly
+  it will make movement easy for the Armed Forces [Music] while moving to forward
+  areas like lay but it is the speed of the project in a treacherous mountain region
+  that will raise eyebrows [Music] many civil engineering difficulties poor geology
+  hilly Terrain harsh climate pandemic induced delays and a busy highway the project
+  has taken a little over five years to build statistically this can be one of the
+  most challenging Hill Road projects ever because the project features are just mind-boggling
+  10 tunnels one elevated Viaduct three major Bridges ten minor Bridges and two laning
+  of more than 13 kilometers of highways [Music] for its history the Pandora arts
+  section of National Highway 21 has been notorious for rock falls and devastating
+  la...'
+request_time: '2026-04-08T12:44:09.063Z'
+response_preview: '"## Summary:\n\nThis YouTube video transcript details the construction
+  of a critical highway project in Himachal Pradesh, India, aimed at improving tourism,
+  reducing travel time to Manali, and facilitating the movement of armed forces to
+  forward areas like Leh. The project, spanning just over five years, involved constructing
+  ten tunnels (including the largest cross-sectional tunnels in the Himalayas), an
+  elevated viaduct, and several bridges, alongside the widening of existing highway
+  sections. Despite facing numerous challenges such as difficult geology, harsh climate,
+  landslides, rockfalls, pandemic-induced delays, and working in proximity to existing
+  infrastructure, the project was successfully completed using advanced techniques
+  like the New Austrian Tunneling Methodology (NATM). The project highlights remarkable
+  feats of engineering, human ingenuity, and perseverance in overcoming extreme conditions.\n\n##
+  Key Technical Terms:\n\n*   **All-weather connectivity:** Infrastructur...'
+state: OK
+trace_id: tr-30ebbebbbaa08e58bdefe3113d61fd86
+trace_location:
+  mlflow_experiment:
+    experiment_id: '0'
+  type: MLFLOW_EXPERIMENT

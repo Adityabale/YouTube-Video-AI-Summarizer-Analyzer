@@ -1,0 +1,16 @@
+assessment_id: a-57fba13503da4345b9213b3f848e954c
+assessment_name: completeness
+create_time: '2026-04-09T09:06:43.804Z'
+feedback:
+  value: 'yes'
+last_update_time: '2026-04-09T09:06:43.804Z'
+metadata:
+  mlflow.assessment.sourceRunId: e51111b980b0429896b1ee0d91f57665
+rationale: The assistant successfully summarized the video content based on the user's
+  input, covering the key aspects mentioned.
+source:
+  source_id: gemini:/gemini-2.5-flash-lite
+  source_type: LLM_JUDGE
+span_id: b1e1e655fd9c486f
+trace_id: tr-48a12137736c8bcca92e637081e6a3e4
+valid: true

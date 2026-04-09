@@ -1,0 +1,18 @@
+assessment_id: a-4b7304e2bc2948f49358b3869b8a29c3
+assessment_name: completeness
+create_time: '2026-04-08T14:26:17.914Z'
+feedback:
+  value: 'yes'
+last_update_time: '2026-04-08T14:26:17.914Z'
+metadata:
+  mlflow.assessment.sourceRunId: b23224aca5a24fa3b819f1bf3c9f7e8d
+rationale: The user provided a text describing the Chenab Railway Bridge and implicitly
+  requested a summary or analysis of the provided information. The assistant provided
+  a structured summary, a list of technical terms, a breakdown of challenges and solutions,
+  and lessons learned, all of which are fully supported by the provided text.
+source:
+  source_id: gemini:/gemini-flash-lite-latest
+  source_type: LLM_JUDGE
+span_id: 32e344623386f3f4
+trace_id: tr-239920d5adb91eeac8633c2a52ea9350
+valid: true

@@ -45,6 +45,7 @@
                 <div class="tabs">
                     <button class="tab-btn active" onclick="showTab('summary-tab')">Analysis Report</button>
                     <button class="tab-btn" onclick="showTab('transcript-tab')">Full Transcript</button>
+                    <button class="tab-btn" onclick="showTab('quality-tab')">Quality Analysis</button>
                 </div>
 
                 <div id="summary-tab" class="tab-content glass-card active">
@@ -55,6 +56,14 @@
                 <div id="transcript-tab" class="tab-content glass-card">
                     <h3>Full Transcript</h3>
                     <div id="transcript-text" class="transcript-box"></div>
+                </div>
+
+                <div id="quality-tab" class="tab-content glass-card">
+                    <h3>MLflow Quality Evaluation</h3>
+                    <p class="tab-subtitle">Evaluation powered by LLM-as-a-judge using specific quality dimensions.</p>
+                    <div id="quality-metrics" class="metrics-grid">
+                        <div class="metric-placeholder">Run an analysis to see quality metrics...</div>
+                    </div>
                 </div>
             </div>
         </main>

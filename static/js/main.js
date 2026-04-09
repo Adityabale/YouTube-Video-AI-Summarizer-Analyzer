@@ -43,12 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             transcriptText.textContent = data.transcript;
 
+            // Render Metrics
+            const qualityMetrics = document.getElementById('quality-metrics');
+            if (data.metrics) {
+                renderMetrics(data.metrics, qualityMetrics);
+            } else {
+                qualityMetrics.innerHTML = '<div class="metric-error">Evaluation failed or was skipped.</div>';
+            }
+
             loading.classList.add('hidden');
             results.classList.remove('hidden');
             analyzeBtn.disabled = false;
-            
-            // Re-render any markdown-like content if necessary, 
-            // but the backend is already sending HTML.
             
         } catch (error) {
             showStatus(error.message, "error");
@@ -56,6 +61,31 @@ document.addEventListener('DOMContentLoaded', () => {
             analyzeBtn.disabled = false;
         }
     });
+
+    function renderMetrics(metrics, container) {
+        container.innerHTML = '';
+        const metricKeys = Object.keys(metrics);
+        
+        metricKeys.forEach(key => {
+            const m = metrics[key];
+            const card = document.createElement('div');
+            card.className = 'metric-card';
+            
+            const scoreClass = m.score >= 4 ? 'score-high' : (m.score >= 3 ? 'score-mid' : 'score-low');
+            
+            card.innerHTML = `
+                <div class="metric-header">
+                    <span class="metric-name">${key.charAt(0).toUpperCase() + key.slice(1)}</span>
+                    <span class="metric-score ${scoreClass}">${m.score}/5</span>
+                </div>
+                <div class="metric-bar-bg">
+                    <div class="metric-bar-fill ${scoreClass}" style="width: ${m.score * 20}%"></div>
+                </div>
+                <p class="metric-justification">${m.justification}</p>
+            `;
+            container.appendChild(card);
+        });
+    }
 
     function showStatus(text, type) {
         statusMsg.textContent = text;

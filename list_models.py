@@ -1,14 +1,9 @@
 import os
-import google.generativeai as genai
+import requests
 from dotenv import load_dotenv
 
 load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-
-print("Listing available models...")
-try:
-    for m in genai.list_models():
-        if 'generateContent' in m.supported_generation_methods:
-            print(f"- {m.name}")
-except Exception as e:
-    print(f"Error: {e}")
+api_key = os.environ.get("GEMINI_API_KEY")
+r = requests.get(f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}")
+data = r.json()
+print("\n".join([m["name"] for m in data.get("models", []) if "gemini" in m["name"]]))

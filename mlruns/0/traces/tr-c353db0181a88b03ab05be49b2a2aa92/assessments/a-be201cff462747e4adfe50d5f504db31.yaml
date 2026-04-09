@@ -1,0 +1,153 @@
+assessment_id: a-be201cff462747e4adfe50d5f504db31
+assessment_name: relevance_to_query
+create_time: '2026-04-08T14:07:34.673Z'
+feedback:
+  error:
+    error_code: SCORER_ERROR
+    error_message: "Failed to call LLM endpoint at https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent.\n-
+      Error: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent\n-
+      Response body: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You
+      exceeded your current quota, please check your plan and billing details. For
+      more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
+      To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota
+      exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count,
+      limit: 0, model: gemini-2.5-pro\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,
+      limit: 0, model: gemini-2.5-pro\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,
+      limit: 0, model: gemini-2.5-pro\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count,
+      limit: 0, model: gemini-2.5-pro\\nPlease retry in 26.538828295s.\",\n    \"status\":
+      \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n
+      \       \"links\": [\n          {\n            \"description\": \"Learn more
+      about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n
+      \         }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n
+      \       \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\n
+      \           \"quotaId\": \"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\n
+      \           \"quotaDimensions\": {\n              \"location\": \"global\",\n
+      \             \"model\": \"gemini-2.5-pro\"\n            }\n          },\n          {\n
+      \           \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n
+      \           \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n
+      \           \"quotaDimensions\": {\n              \"location\": \"global\",\n
+      \             \"model\": \"gemini-2.5-pro\"\n            }\n          },\n          {\n
+      \           \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n
+      \           \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\n
+      \           \"quotaDimensions\": {\n              \"location\": \"global\",\n
+      \             \"model\": \"gemini-2.5-pro\"\n            }\n          },\n          {\n
+      \           \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\n
+      \           \"quotaId\": \"GenerateContentInputTokensPerModelPerDay-FreeTier\",\n
+      \           \"quotaDimensions\": {\n              \"location\": \"global\",\n
+      \             \"model\": \"gemini-2.5-pro\"\n            }\n          }\n        ]\n
+      \     },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n
+      \       \"retryDelay\": \"26s\"\n      }\n    ]\n  }\n}\n\n- Input payload:
+      {'contents': [{'role': 'user', 'parts': [{'text': 'Consider the following question
+      and answer. You must determine whether the answer provides information that
+      is (fully or partially) relevant to the question. Do not focus on the correctness
+      or completeness of the answer. Do not make assumptions, approximations, or bring
+      in external knowledge.\\n\\n<question>{\\'query\\': \\'This is a video about
+      building a house. First you lay the foundation, then you build walls.\\'}</question>\\n<answer>A
+      video guide on house construction starting with foundation and walls.</answer>\\n\\nPlease
+      indicate whether the answer contains information that is relevant to the question
+      using only the following json format. Do not use any markdown formatting or
+      output additional lines.\\n{\\n  \"rationale\": \"Reason for the assessment.
+      If the answer does not provide any information that is relevant to the question
+      then state which parts are not relevant. Start each rationale with `Let\\'s
+      think step by step`\",\\n  \"result\": \"yes|no\"\\n}\\n`result` must only be
+      `yes` or `no`.'}]}]}."
+    stack_trace: "Traceback (most recent call last):\n  File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\metrics\\genai\\model_utils.py\",
+      line 500, in _send_request\n    response.raise_for_status()\n  File \"C:\\Users\\Aditya
+      Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\requests\\models.py\",
+      line 1028, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError:
+      429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent\n\nThe
+      above exception was the direct cause of the following exception:\n\nTraceback
+      (most recent call last):\n  File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\harness.py\",
+      line 869, in run_scorer\n    value = call_with_retry(\n            ^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\rate_limiter.py\",
+      line 193, in call_with_retry\n    raise last_exc\n  File \"C:\\Users\\Aditya
+      Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\rate_limiter.py\",
+      line 178, in call_with_retry\n    result = fn()\n             ^^^^\n  File \"C:\\Users\\Aditya
+      Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\harness.py\",
+      line 870, in <lambda>\n    lambda: _invoke_scorer(scorer_func, eval_item), rate_limiter,
+      max_retries\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Aditya
+      Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\harness.py\",
+      line 840, in _invoke_scorer\n    return scorer_func(\n           ^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\scorers\\base.py\",
+      line 497, in run\n    result = self(**filtered)\n             ^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\scorers\\base.py\",
+      line 167, in wrapper\n    return telemetry_wrapped(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\telemetry\\track.py\",
+      line 24, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\scorers\\builtin_scorers.py\",
+      line 1571, in __call__\n    feedback = judges.is_context_relevant(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\builtin.py\",
+      line 124, in is_context_relevant\n    feedback = invoke_judge_model(\n               ^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\telemetry\\track.py\",
+      line 24, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\utils\\invocation_utils.py\",
+      line 99, in invoke_judge_model\n    output = adapter.invoke(input_params)\n
+      \            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\adapters\\base_adapter.py\",
+      line 131, in invoke\n    output = self._invoke(input_params)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\adapters\\gateway_adapter.py\",
+      line 377, in _invoke\n    response = _invoke_via_gateway(\n               ^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\adapters\\gateway_adapter.py\",
+      line 301, in _invoke_via_gateway\n    return score_model_on_payload(\n           ^^^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\metrics\\genai\\model_utils.py\",
+      line 86, in score_model_on_payload\n    return _call_llm_provider_api(\n           ^^^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\metrics\\genai\\model_utils.py\",
+      line 272, in _call_llm_provider_api\n    response = _send_request(\n               ^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\metrics\\genai\\model_utils.py\",
+      line 503, in _send_request\n    raise MlflowException(\nmlflow.exceptions.MlflowException:
+      Failed to call LLM endpoint at https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent.\n-
+      Error: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent\n-
+      Response body: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You
+      exceeded your current quota, please check your plan and billing details. For
+      more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
+      To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota
+      exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count,
+      limit: 0, model: gemini-2.5-pro\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,
+      limit: 0, model: gemini-2.5-pro\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,
+      limit: 0, model: gemini-2.5-pro\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count,
+      limit: 0, model: gemini-2.5-pro\\nPlease retry in 26.538828295s.\",\n    \"status\":
+      \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n
+      \       \"links\": [\n          {\n            \"description\": \"Learn more
+      about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n
+      \         }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n
+      \       \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\n
+      \           \"quotaId\": \"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\n
+      \           \"quotaDimensions\": {\n              \"location\": \"global\",\n
+      \             \"model\": \"gemini-2.5-pro\"\n            }\n          },\n          {\n
+      \           \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n
+      \           \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n
+      \           \"quotaDimensions\": {\n              \"location\": \"global\",\n
+      \             \"model\": \"gemini-2.5-pro\"\n            }\n          },\n          {\n
+      \           \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n
+      \           \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\n
+      \           \"quotaDimensions\": {\n              \"location\": \"global\",\n
+      \             \"model\": \"gemini-2.5-pro\"\n            }\n          },\n          {\n
+      \           \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\n
+      \           \"quotaId\": \"GenerateContentInputTokensPerModelPerDay-FreeTier\",\n
+      \           \"quotaDimensions\": {\n              \"location\": \"global\",\n
+      \             \"model\": \"gemini-2.5-pro\"\n            }\n          }\n        ]\n
+      \     },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n
+      \       \"retryDelay\": \"26s\"\n      }\n    ]\n  }\n}\n\n- Input payload:
+      {'contents': [{'role': 'user', 'parts': [{'text': 'Consider the following question
+      and answer. You must determine whether the answer provides information that
+      is (fully or partially) relevant to the question. Do not focus on the correctness
+      or completeness of the answer. Do not make assumptions, approximations, or bring
+      in external knowledge.\\n\\n<question>{\\'query\\': \\'This is a video about
+      building a house. First you lay the foundation, then you build walls.\\'}</question>\\n<answer>A
+      video guide on house construction starting with foundation and walls.</answer>\\n\\nPlease
+      indicate whether the answer contains information that is relevant to the question
+      using only the following json format. Do not use any markdown formatting or
+      output additional lines.\\n{\\n  \"rationale\": \"Reason for the assessment.
+      If the answer does not provide any information that is relevant to the question
+      then state which parts are not relevant. Start each rationale with `Let\\'s
+      think step by step`\",\\n  \"result\": \"yes|no\"\\n}\\n`result` must only be
+      `yes` or `no`.'}]}]}.\n"
+  value: null
+last_update_time: '2026-04-08T14:07:34.673Z'
+metadata:
+  mlflow.assessment.sourceRunId: f48f9f51fab74c748d6acb31529efecf
+source:
+  source_id: relevance_to_query
+  source_type: CODE
+span_id: 7905ae27318c419d
+trace_id: tr-c353db0181a88b03ab05be49b2a2aa92
+valid: true

@@ -1,0 +1,9 @@
+digest: fde01706
+name: dataset
+profile: '{"num_rows": 1, "num_elements": 2}'
+schema: '{"mlflow_colspec": [{"type": "object", "properties": {"query": {"type": "string",
+  "required": true}}, "name": "inputs", "required": true}, {"type": "string", "name":
+  "outputs", "required": true}]}'
+source: '{"tags": {"mlflow.user": "Aditya Balekundri", "mlflow.source.name": "debug_eval.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "de7e539aff4eb77a8a35b57ee79239b2ed4c6970"}}'
+source_type: code

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Aditya Balekundri/YouTube_AI_Summarizer_&_Analyzer/mlruns/0/def1ec930cc640d7bda9dbd896089ed0/artifacts
+end_time: 1775656655537
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: def1ec930cc640d7bda9dbd896089ed0
+run_name: Summary_Evaluation_v3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775656654418
+status: 4
+tags: []
+user_id: Aditya Balekundri

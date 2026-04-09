@@ -7,7 +7,8 @@ A powerful, modern web application that leverages **Google Gemini AI** to transc
 ## ✨ Features
 
 - 📝 **Automated Transcription**: Fetches full transcripts from YouTube videos using their URL.
-- 🤖 **AI-Powered Analysis**: Uses **Gemini 2.0 Flash** to provide structured summaries.
+- 🤖 **AI-Powered Analysis**: Uses **Gemini 2.5 Flash Lite** to provide structured summaries.
+- ⚖️ **Automated Quality Evaluation**: Uses **MLflow 3.x GenAI Evaluation** to grade AI answers on Relevance, Completeness, and Safety with LLM-as-a-judge.
 - 🔍 **Deep Insights**:
   - **Key Points**: A concise breakdown of the video's core message.
   - **Technical Terms**: Identifies and explains jargon used in the video.
@@ -25,8 +26,9 @@ A powerful, modern web application that leverages **Google Gemini AI** to transc
 ## 🛠️ Tech Stack
 
 - **Backend**: Python, [Flask](https://flask.palletsprojects.com/)
-- **AI Model**: [Google Gemini 1.5 Flash](https://ai.google.dev/models/gemini)
-- **APIs**: `youtube-transcript-api`, `google-generativeai`
+- **AI Model**: [Google Gemini 2.5 Flash Lite](https://ai.google.dev/models/gemini)
+- **MLOps & Tracking**: [MLflow 3.x](https://mlflow.org/)
+- **APIs**: `youtube-transcript-api`, `google-genai`
 - **Frontend**: Vanilla HTML5, CSS3 (Custom Design System), JavaScript (ES6+)
 
 ---
@@ -77,8 +79,10 @@ Open your browser and navigate to `http://127.0.0.1:5000/`.
 .
 ├── transcripts/        # Automatically saved raw transcripts
 ├── analysis_reports/   # Automatically saved AI analysis reports (.md)
+├── mlflow.db           # SQLite database for MLflow tracking backend
 ├── app.py              # Main Flask application
 ├── utils.py            # Helper functions for transcript & AI logic
+├── evaluation_utils.py # MLflow 3.x automated judging and metrics logic
 ├── requirements.txt    # Python dependencies
 ├── .env                # Environment variables (private)
 ├── static/
@@ -94,8 +98,9 @@ Open your browser and navigate to `http://127.0.0.1:5000/`.
 
 1. **Input**: Paste any YouTube video URL into the interface.
 2. **Transcript Extraction**: The backend identifies the video ID and uses `youtube-transcript-api` to pull the raw text.
-3. **AI Processing**: The text is sent to Gemini AI with a specialized prompt to analyze the content and return structured HTML.
-4. **Display**: The result is rendered in a beautiful, tabbed interface for easy reading.
+3. **AI Processing**: The text is sent to Gemini AI with a specialized prompt to analyze the content and return structured text/HTML.
+4. **Evaluation**: MLflow uses Gemini as an "LLM-as-a-judge" to evaluate the summary's quality against the raw transcript.
+5. **Display**: The final analysis and MLflow quality metrics (with justifications) are presented in a beautiful user interface.
 
 ---
 

@@ -1,0 +1,20 @@
+assessment_id: a-1410f4664f714cd4b838ed0cd5e39c46
+assessment_name: relevance_to_query
+create_time: '2026-04-08T14:26:17.912Z'
+feedback:
+  value: 'yes'
+last_update_time: '2026-04-08T14:26:17.912Z'
+metadata:
+  mlflow.assessment.sourceRunId: b23224aca5a24fa3b819f1bf3c9f7e8d
+rationale: The question asks for information regarding the Chennab Railway Bridge,
+  and the provided text is a transcript detailing the bridge's construction, challenges,
+  and significance. The answer provided is a structured summary of that exact transcript,
+  extracting key facts, technical terms, and challenges mentioned in the source material.
+  Since the answer directly synthesizes and summarizes the provided text, it is highly
+  relevant.
+source:
+  source_id: gemini:/gemini-flash-lite-latest
+  source_type: LLM_JUDGE
+span_id: 32e344623386f3f4
+trace_id: tr-239920d5adb91eeac8633c2a52ea9350
+valid: true

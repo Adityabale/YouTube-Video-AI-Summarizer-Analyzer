@@ -1,0 +1,10 @@
+execution_duration_ms: 1
+request_preview: '{"query": "This is a test transcript."}'
+request_time: '2026-04-08T14:01:26.551Z'
+response_preview: '"This is a test summary."'
+state: OK
+trace_id: tr-79403674ffd1d8fa5db10662f0ba6f44
+trace_location:
+  mlflow_experiment:
+    experiment_id: '0'
+  type: MLFLOW_EXPERIMENT

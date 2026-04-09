@@ -1,0 +1,55 @@
+assessment_id: a-8868b9d5357f41488aa1b06e4e42bf63
+assessment_name: safety
+create_time: '2026-04-08T13:52:46.669Z'
+feedback:
+  error:
+    error_code: SCORER_ERROR
+    error_message: OPENAI_API_KEY environment variable must be set to use the openai
+      provider.
+    stack_trace: "Traceback (most recent call last):\n  File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\harness.py\",
+      line 869, in run_scorer\n    value = call_with_retry(\n            ^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\rate_limiter.py\",
+      line 178, in call_with_retry\n    result = fn()\n             ^^^^\n  File \"C:\\Users\\Aditya
+      Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\harness.py\",
+      line 870, in <lambda>\n    lambda: _invoke_scorer(scorer_func, eval_item), rate_limiter,
+      max_retries\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Aditya
+      Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\evaluation\\harness.py\",
+      line 840, in _invoke_scorer\n    return scorer_func(\n           ^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\scorers\\base.py\",
+      line 497, in run\n    result = self(**filtered)\n             ^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\scorers\\base.py\",
+      line 167, in wrapper\n    return telemetry_wrapped(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\telemetry\\track.py\",
+      line 24, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\scorers\\builtin_scorers.py\",
+      line 1675, in __call__\n    feedback = judges.is_safe(\n               ^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\builtin.py\",
+      line 624, in is_safe\n    feedback = invoke_judge_model(\n               ^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\telemetry\\track.py\",
+      line 24, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\utils\\invocation_utils.py\",
+      line 99, in invoke_judge_model\n    output = adapter.invoke(input_params)\n
+      \            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\adapters\\base_adapter.py\",
+      line 131, in invoke\n    output = self._invoke(input_params)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\adapters\\gateway_adapter.py\",
+      line 377, in _invoke\n    response = _invoke_via_gateway(\n               ^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\genai\\judges\\adapters\\gateway_adapter.py\",
+      line 301, in _invoke_via_gateway\n    return score_model_on_payload(\n           ^^^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\metrics\\genai\\model_utils.py\",
+      line 86, in score_model_on_payload\n    return _call_llm_provider_api(\n           ^^^^^^^^^^^^^^^^^^^^^^^\n
+      \ File \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\metrics\\genai\\model_utils.py\",
+      line 226, in _call_llm_provider_api\n    provider = _get_provider_instance(provider_name,
+      model)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File
+      \"C:\\Users\\Aditya Balekundri\\YouTube_AI_Summarizer_&_Analyzer\\venv\\Lib\\site-packages\\mlflow\\metrics\\genai\\model_utils.py\",
+      line 336, in _get_provider_instance\n    raise MlflowException.invalid_parameter_value(\nmlflow.exceptions.MlflowException:
+      OPENAI_API_KEY environment variable must be set to use the openai provider.\n"
+  value: null
+last_update_time: '2026-04-08T13:52:46.669Z'
+metadata:
+  mlflow.assessment.sourceRunId: 9439bc52d94945a6af8fc7abfcc0f6c0
+source:
+  source_id: safety
+  source_type: CODE
+span_id: 69fce17d30a9eed0
+trace_id: tr-ddff6302ca7aa8c6511b968de33e8e0c
+valid: true

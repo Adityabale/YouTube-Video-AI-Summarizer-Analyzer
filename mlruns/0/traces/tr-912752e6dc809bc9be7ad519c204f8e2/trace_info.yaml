@@ -1,0 +1,33 @@
+execution_duration_ms: 4
+request_preview: '{"query": "[Music] The udhampur shagar baramula Rail Link usbrl
+  project is one of independent India''s most challenging and important infrastructure
+  projects one of the most challenging parts of this project is a single Arch Bridge
+  over River chub coming up between and Buckle in rasi [Music] District on completion
+  it will be the tallest railway bridge in the world standing at 359 M it will be
+  35 M higher than the Eiffel Tower but this bridge is a world beating project not
+  just for its height its design and construction are very special and unlike anything
+  anywhere in the world it is the first bridge in India designed for contact blast
+  load the bridge will be able to withstand an earthquake of intensity 8 on the RoR
+  scale the location of the bridge exposes it to Gale winds the design takes this
+  into account and trains will be able to ply on it safely in winds up to 90 km/ hour
+  beyond the safe limit the sensors provided on the bridge will activate the signals
+  automatically which in tur...'
+request_time: '2026-04-08T13:51:13.201Z'
+response_preview: '"# Analysis of Udhampur-Srinagar-Baramulla Rail Link (USRL) Project
+  - Chenab Bridge\n\n## Summary:\n\nThis video transcript details the Udhampur-Srinagar-Baramulla
+  Rail Link (USRL) project, highlighting the Chenab Bridge as a monumental and technically
+  challenging undertaking. The bridge, once completed, will be the world''s tallest
+  railway bridge, exceeding the Eiffel Tower in height. Its design incorporates advanced
+  features to withstand extreme environmental conditions, including seismic activity
+  (intensity 8 on the Richter scale) and high winds (up to 90 km/hr). The construction
+  of the bridge''s massive foundations and the stabilization of the extremely steep
+  Himalayan slopes (ranging from 43° to 77°) are identified as major challenges. The
+  video outlines the meticulous processes involved in slope stabilization, including
+  extensive testing, expert design by the Indian Institute of Science Bangalore and
+  proof checking by URS, and the use of methods like top-down construction, presp...'
+state: OK
+trace_id: tr-912752e6dc809bc9be7ad519c204f8e2
+trace_location:
+  mlflow_experiment:
+    experiment_id: '0'
+  type: MLFLOW_EXPERIMENT

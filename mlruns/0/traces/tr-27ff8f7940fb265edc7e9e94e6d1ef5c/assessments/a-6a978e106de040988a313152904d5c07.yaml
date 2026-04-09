@@ -1,0 +1,345 @@
+assessment_id: a-6a978e106de040988a313152904d5c07
+assessment_name: relevance_to_query
+create_time: '2026-04-08T12:46:01.969Z'
+feedback:
+  error:
+    error_code: SCORER_ERROR
+    error_message: "Failed to call LLM endpoint at https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent.\n-
+      Error: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent\n-
+      Response body: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-pro
+      is not found for API version v1beta, or is not supported for generateContent.
+      Call ListModels to see the list of available models and their supported methods.\",\n
+      \   \"status\": \"NOT_FOUND\"\n  }\n}\n\n- Input payload: {'contents': [{'role':
+      'user', 'parts': [{'text': 'Consider the following question and answer. You
+      must determine whether the answer provides information that is (fully or partially)
+      relevant to the question. Do not focus on the correctness or completeness of
+      the answer. Do not make assumptions, approximations, or bring in external knowledge.\\n\\n<question>{\\'query\\':
+      \"foreign [Music] Highway in Himachal Pradesh is open for traffic it will give
+      a significant boost to tourism with the new all-weather connectivity it will
+      reduce travel time from Monday to Manali by more than 60 minutes most importantly
+      it will make movement easy for the Armed Forces [Music] while moving to forward
+      areas like lay but it is the speed of the project in a treacherous mountain
+      region that will raise eyebrows [Music] many civil engineering difficulties
+      poor geology hilly Terrain harsh climate pandemic induced delays and a busy
+      highway the project has taken a little over five years to build statistically
+      this can be one of the most challenging Hill Road projects ever because the
+      project features are just mind-boggling 10 tunnels one elevated Viaduct three
+      major Bridges ten minor Bridges and two laning of more than 13 kilometers of
+      highways [Music] for its history the Pandora arts section of National Highway
+      21 has been notorious for rock falls and devastating landslides several fatal
+      accidents have taken place in the past so it was proposed to construct multiple
+      tunnels that would allow motorists a safe passage throughout the year in the
+      process what captured the imagination of the national highway authority of India
+      or nhai was to construct tunnels of diameters as big as 13.8 meters [Music]
+      these are the largest cross-sectional tunnels in the entire Himalayan region
+      foreign [Music] [Music] because of the different type of rocks analogist the
+      cross section of the tunnel is 121 square meter and a Dia is 13.8 meter and
+      longest tunnel is the 2.8 kilometer the construction of the tunnel is very difficult
+      because of a geological disturbance we completed the exception of the tunnel
+      in time [Music] this entire stage is being renovated to provide all weather
+      safe connectivity to tourists locals and the Armed Forces and the tunnels have
+      been exhibited such that they can have world-class facilities including Escada
+      control electrical and safety systems air quality monitoring tunnel ventilation
+      systems and quick response system for accidents these structures are designed
+      for 100 years of life [Music] TBM tunneling was not an option here because the
+      tunnel alignment passed through areas with houses farmlands forests moreover
+      it lacked a stable geology the tunnels were constructed using new Australian
+      turning methodology this is a brilliant blast method and provides continuous
+      support as the tunnel produces at critical points we introduced by booking and
+      consolidating routing additionally as strengthening measures the tunnel phase
+      exhibition was done in two parts first is 6.5 meter heading was created then
+      after installation of necessary supports benching was done as support with 150
+      meter Gap the lower portion of tunnel was executed by benching in two parts
+      again firstly one half of the tunnel was excluded in benching portion after
+      Excavating about 100 meter the other higher half was executed this was done
+      to ensure a smooth tunneling in all types of Road classes there were 20 tunnel
+      portals out of which 12 white Nala Crossings [Music] that heavy monsoons and
+      landslides battled the sight every year our approach roads constructed over
+      nalas were damaged multiple times every Monsoon but the team showed tremendous
+      grid to restore the roads almost immediately we always had a plan B so that
+      the tunneling Works were unaffected you need to have the right people with the
+      right mindset to overcome such moral damaging challenges [Music] onto our incident
+      the team has achieved over 20 million safe man hours and has been part of various
+      rescue missions to help stranded tourists ambushed by landslides or heavy Rock
+      Falls adapting to the hilly terrain was a remarkable challenge the tunnel overburdened
+      varied from 20 meters to a maximum of 800 meters [Music] it created deformation
+      as high as 500 mm on particular plane and 275 mm on horizontal plane to make
+      things worse the rod must change abruptly at every 15-20 meter during exhibitions
+      the changing Rod means a formidable change from the anticipated rock formation
+      to more difficult Road classes the challenges were Amplified due to soft rock
+      and seepage with multiple fall zones we have to change the design of the support
+      system shooting the site at every steps [Music] Myriad are the structures it
+      was a power station on the project alignment that led to the construction of
+      an 840 meter Viaduct over the existing Highway it became the longest elevated
+      Corridor on nh21 one watt bottleneck in our project was working in the approximity
+      of a existing Hydra project that was a large project and our two tunnels was
+      just passing along the power structure construction of elevated structure was
+      one more challenge it was just along the PowerHouse structure and River on the
+      other side earlier the design it was some open foundations but as it was not
+      possible and their space was very less we had to go for piling this stretch
+      [Music] there were concerns whether the project could meet its deadline the
+      covid-19 pandemic brought more worries but quality was never sacrificed for
+      Speed during last decade afcon\\'s has been involved in number of tunnel Wars
+      tunneling in Himalaya have peculiar problems atal tunnel had serious issues
+      with a far Zone named Serena approximately 500 meter inside the tunnel we Face
+      tremendous water Ingress with lot of loose materials which took almost three
+      years for us to stabilize one more important railway tunnel project in Jammu
+      and Kashmir had a squeezing problem and lot of profiling work was done at Pando
+      apart from geotechnical issues the main issue was with the alignment to solve
+      this we had to go for change of score at three locations and re-investigation
+      Etc to substantial time all there is and uncertainties were navigated with careful
+      and extensive planning at every point the team worked tirelessly to complete
+      the task sometimes with no standard Solutions the team executed the plans perfectly
+      to get the desired results within stipulated time period [Music] performance
+      of the Afghan infrastructure private limited is fully satisfied we are fully
+      satisfied with the progress of the work the company did not stop the work even
+      in the kohi time by managing the all the resources labor Manpower Machinery
+      material and providing all the cohit protocols the worker could be completed
+      in time the overall performance of this Khan is very good no challenge could
+      Dent the team\\'s determination to complete the work efficiently we had 20 tunnel
+      portals which is a unique fit in Indian tunneling we exuded 42 tunnels and two
+      single tube tunnels simultaneously to meet the project timelines we sincerely
+      thank the government and the local authorities for their support and cooperation
+      in successful completion of this project the Pando bypass to takoli project
+      is unprecedented in the entire Himachal region once motorists Traverse the massive
+      tunnels and enjoy the jaw-dropping signals it will be a Vindication of the behind
+      the scenes human Ingenuity and Extreme Engineering thank you [Music]\"}</question>\\n<answer>##
+      Summary:\\n\\nThis video discusses the construction of a new all-weather highway
+      in Himachal Pradesh, India, specifically focusing on the Pandoh bypass to Takoli
+      project. The project significantly reduces travel time to Manali, boosts tourism,
+      and facilitates movement for the Armed Forces. It highlights the immense engineering
+      challenges overcome, including difficult geology, harsh climate, pandemic-induced
+      delays, and the need for large-diameter tunnels. The construction employed the
+      New Austrian Tunneling Methodology (NATM) and innovative techniques for excavation
+      and support. The project\\'s success is attributed to meticulous planning, adaptability,
+      and the dedication of the construction team, resulting in a vital piece of infrastructure
+      designed for a 100-year lifespan.\\n\\n## Key Technical Terms:\\n\\n*   **All-weather
+      connectivity:** Infrastructure that remains operational and accessible regardless
+      of adverse weather conditions, such as heavy snow or monsoons.\\n*   **Elevated
+      Viaduct:** A long bridge-like structure that carries a road or railway over
+      a valley or other obstacles.\\n*   **Tunnels:** Underground passages constructed
+      to allow passage through mountains or under obstacles.\\n*   **Cross-sectional
+      area:** The area of a shape formed by cutting through an object perpendicular
+      to its length. In tunnels, it relates to the size of the passage.\\n*   **Tunnel
+      Overburden:** The thickness of rock and soil above the tunnel roof.\\n*   **Geology:**
+      The study of the Earth\\'s physical structure and substance, its history, and
+      the processes that act on it. In construction, it refers to the rock and soil
+      conditions.\\n*   **Rock Falls/Landslides:** The sudden downward movement of
+      rock or soil on a slope, common in mountainous regions.\\n*   **New Austrian
+      Tunneling Methodology (NATM):** A construction method for tunnels that emphasizes
+      flexibility and adaptation to ground conditions, using shotcrete (sprayed concrete)
+      and rock bolts for immediate support.\\n*   **Blast Method:** A tunneling technique
+      involving controlled explosions to break up rock.\\n*   **Consolidating Grouting:**
+      Injecting grout (a fluid cement mixture) into the ground to strengthen it and
+      reduce permeability.\\n*   **Heading:** An initial excavation in a tunnel, often
+      the upper part.\\n*   **Benching:** A method of excavating a tunnel in multiple
+      stages, typically excavating the upper part (heading) first, followed by the
+      lower part (benching).\\n*   **Tunnel Portals:** The entrances and exits of
+      a tunnel.\\n*   **Nala Crossing:** A structure built to allow a road to cross
+      a natural stream or gully (nala).\\n*   **Seepage:** The slow leakage of water
+      into a tunnel.\\n*   **Fall Zones:** Areas within a tunnel where there is a
+      high risk of rock or material falling.\\n*   **TBM Tunneling (Tunnel Boring
+      Machine):** A mechanized method of excavating tunnels using a large, cylindrical
+      machine.\\n*   **Shotcrete:** Concrete sprayed at high velocity onto a surface.\\n*
+      \  **Escada Control:** Likely refers to SCADA (Supervisory Control and Data
+      Acquisition) systems for monitoring and controlling tunnel operations.\\n*   **Tunnel
+      Ventilation Systems:** Systems designed to ensure fresh air circulation and
+      remove pollutants within tunnels.\\n*   **Quick Response System:** Emergency
+      systems designed for rapid intervention in case of accidents.\\n*   **Piling:**
+      Constructing foundations by driving long, slender columns (piles) into the ground.\\n\\n##
+      Major Challenges & Solutions:\\n\\n*   **Challenge:** Poor geology and treacherous
+      mountain terrain.\\n    *   **Solution:** Employed the New Austrian Tunneling
+      Methodology (NATM) with blast and benching methods, continuous support with
+      shotcrete and rock bolts, and adapting excavation based on changing rock formations.
+      Extensive geological investigations and redesigns were undertaken.\\n*   **Challenge:**
+      Harsh climate and heavy monsoons causing landslides and damaging approach roads.\\n
+      \   *   **Solution:** Constructed robust approach roads over nalas and showed
+      resilience in restoring them quickly after damage. Maintained a \"Plan B\" to
+      ensure tunneling works were unaffected.\\n*   **Challenge:** Pandemic-induced
+      delays (COVID-19).\\n    *   **Solution:** The construction company managed
+      resources, manpower, and machinery effectively, ensuring all COVID-19 protocols
+      were followed, allowing work to continue and be completed on time. Quality was
+      not sacrificed for speed.\\n*   **Challenge:** Difficulties in excavating large-diameter
+      tunnels (up to 13.8 meters) through varied rock types.\\n    *   **Solution:**
+      Utilized a two-part excavation process for the tunnel face (heading first, then
+      benching) to manage the large cross-section and ensure smooth tunneling.\\n*
+      \  **Challenge:** Tunnel overburden varying significantly (20m to 800m), causing
+      deformation.\\n    *   **Solution:** Adapted support systems and designs at
+      every step to counteract deformation.\\n*   **Challenge:** Working in proximity
+      to existing structures like a powerhouse, requiring an elevated viaduct.\\n
+      \   *   **Solution:** Constructed an 840-meter Viaduct, the longest on NH21,
+      and opted for piling for foundations due to space constraints and proximity
+      to the powerhouse and river.\\n*   **Challenge:** Water ingress and loose materials
+      within tunnels (e.g., Atal Tunnel example).\\n    *   **Solution:** Employed
+      consolidating grouting and adapted support systems to stabilize the ground and
+      manage water.\\n*   **Challenge:** Squeezing problems in tunnels requiring profiling
+      work.\\n    *   **Solution:** Implemented extensive profiling work and made
+      significant alignment changes (three times) with re-investigations to overcome
+      these issues.\\n*   **Challenge:** Achieving project timelines with multiple
+      simultaneous tunnel excavations.\\n    *   **Solution:** Simultaneously excavated
+      42 tunnels and two single-tube tunnels, demonstrating remarkable project management.\\n\\n##
+      Lessons Learned:\\n\\n*   **Adaptability is Crucial:** The project\\'s success
+      hinges on the ability to adapt excavation methods, support systems, and designs
+      in response to highly variable and challenging geological conditions.\\n*   **Meticulous
+      Planning Prevents Delays:** Careful and extensive planning at every stage is
+      essential to navigate uncertainties and ensure project completion within stipulated
+      timelines.\\n*   **Resilience in the Face of Adversity:** The team\\'s determination
+      to overcome challenges like monsoons, landslides, and pandemics, without compromising
+      quality, is a key takeaway.\\n*   **Importance of Skilled Workforce:** Having
+      the \"right people with the right mindset\" is vital for tackling complex and
+      morale-damaging challenges.\\n*   **Innovation in Tunneling:** The adoption
+      of advanced techniques like NATM and the construction of exceptionally large-diameter
+      tunnels demonstrate a commitment to pushing engineering boundaries.\\n*   **Safety
+      as a Priority:** Achieving over 20 million safe man-hours, even amidst hazardous
+      conditions, underscores the importance of safety protocols and a strong safety
+      culture.\\n*   **Long-Term Vision:** Designing structures for a 100-year lifespan
+      highlights the importance of durable and sustainable infrastructure development.\\n*
+      \  **Collaboration is Key:** Support and cooperation from government and local
+      authorities were instrumental in the project\\'s successful completion.</answer>\\n\\nPlease
+      indicate whether the answer contains information that is relevant to the question
+      using only the following json format. Do not use any markdown formatting or
+      output additional lines.\\n{\\n  \"rationale\": \"Reason for the assessment.
+      If the answer does not provide any information that is relevant to the question
+      then state which parts are not relevant. Start each rationale with `Let\\'s
+      think step by step`\",\\n  \"result\": \"yes|no\"\\n}\\n`result` must only be
+      `yes` or `no`.'}]}]}."
+    stack_trace: '[Stack trace is truncated]
+
+      ...
+
+      e were concerns whether the project could meet its deadline the covid-19 pandemic
+      brought more worries but quality was never sacrificed for Speed during last
+      decade afcon\''s has been involved in number of tunnel Wars tunneling in Himalaya
+      have peculiar problems atal tunnel had serious issues with a far Zone named
+      Serena approximately 500 meter inside the tunnel we Face tremendous water Ingress
+      with lot of loose materials which took almost three years for us to stabilize
+      one more important railway tunnel project in Jammu and Kashmir had a squeezing
+      problem and lot of profiling work was done at Pando apart from geotechnical
+      issues the main issue was with the alignment to solve this we had to go for
+      change of score at three locations and re-investigation Etc to substantial time
+      all there is and uncertainties were navigated with careful and extensive planning
+      at every point the team worked tirelessly to complete the task sometimes with
+      no standard Solutions the team executed the plans perfectly to get the desired
+      results within stipulated time period [Music] performance of the Afghan infrastructure
+      private limited is fully satisfied we are fully satisfied with the progress
+      of the work the company did not stop the work even in the kohi time by managing
+      the all the resources labor Manpower Machinery material and providing all the
+      cohit protocols the worker could be completed in time the overall performance
+      of this Khan is very good no challenge could Dent the team\''s determination
+      to complete the work efficiently we had 20 tunnel portals which is a unique
+      fit in Indian tunneling we exuded 42 tunnels and two single tube tunnels simultaneously
+      to meet the project timelines we sincerely thank the government and the local
+      authorities for their support and cooperation in successful completion of this
+      project the Pando bypass to takoli project is unprecedented in the entire Himachal
+      region once motorists Traverse the massive tunnels and enjoy the jaw-dropping
+      signals it will be a Vindication of the behind the scenes human Ingenuity and
+      Extreme Engineering thank you [Music]"}</question>\n<answer>## Summary:\n\nThis
+      video discusses the construction of a new all-weather highway in Himachal Pradesh,
+      India, specifically focusing on the Pandoh bypass to Takoli project. The project
+      significantly reduces travel time to Manali, boosts tourism, and facilitates
+      movement for the Armed Forces. It highlights the immense engineering challenges
+      overcome, including difficult geology, harsh climate, pandemic-induced delays,
+      and the need for large-diameter tunnels. The construction employed the New Austrian
+      Tunneling Methodology (NATM) and innovative techniques for excavation and support.
+      The project\''s success is attributed to meticulous planning, adaptability,
+      and the dedication of the construction team, resulting in a vital piece of infrastructure
+      designed for a 100-year lifespan.\n\n## Key Technical Terms:\n\n*   **All-weather
+      connectivity:** Infrastructure that remains operational and accessible regardless
+      of adverse weather conditions, such as heavy snow or monsoons.\n*   **Elevated
+      Viaduct:** A long bridge-like structure that carries a road or railway over
+      a valley or other obstacles.\n*   **Tunnels:** Underground passages constructed
+      to allow passage through mountains or under obstacles.\n*   **Cross-sectional
+      area:** The area of a shape formed by cutting through an object perpendicular
+      to its length. In tunnels, it relates to the size of the passage.\n*   **Tunnel
+      Overburden:** The thickness of rock and soil above the tunnel roof.\n*   **Geology:**
+      The study of the Earth\''s physical structure and substance, its history, and
+      the processes that act on it. In construction, it refers to the rock and soil
+      conditions.\n*   **Rock Falls/Landslides:** The sudden downward movement of
+      rock or soil on a slope, common in mountainous regions.\n*   **New Austrian
+      Tunneling Methodology (NATM):** A construction method for tunnels that emphasizes
+      flexibility and adaptation to ground conditions, using shotcrete (sprayed concrete)
+      and rock bolts for immediate support.\n*   **Blast Method:** A tunneling technique
+      involving controlled explosions to break up rock.\n*   **Consolidating Grouting:**
+      Injecting grout (a fluid cement mixture) into the ground to strengthen it and
+      reduce permeability.\n*   **Heading:** An initial excavation in a tunnel, often
+      the upper part.\n*   **Benching:** A method of excavating a tunnel in multiple
+      stages, typically excavating the upper part (heading) first, followed by the
+      lower part (benching).\n*   **Tunnel Portals:** The entrances and exits of a
+      tunnel.\n*   **Nala Crossing:** A structure built to allow a road to cross a
+      natural stream or gully (nala).\n*   **Seepage:** The slow leakage of water
+      into a tunnel.\n*   **Fall Zones:** Areas within a tunnel where there is a high
+      risk of rock or material falling.\n*   **TBM Tunneling (Tunnel Boring Machine):**
+      A mechanized method of excavating tunnels using a large, cylindrical machine.\n*   **Shotcrete:**
+      Concrete sprayed at high velocity onto a surface.\n*   **Escada Control:** Likely
+      refers to SCADA (Supervisory Control and Data Acquisition) systems for monitoring
+      and controlling tunnel operations.\n*   **Tunnel Ventilation Systems:** Systems
+      designed to ensure fresh air circulation and remove pollutants within tunnels.\n*   **Quick
+      Response System:** Emergency systems designed for rapid intervention in case
+      of accidents.\n*   **Piling:** Constructing foundations by driving long, slender
+      columns (piles) into the ground.\n\n## Major Challenges & Solutions:\n\n*   **Challenge:**
+      Poor geology and treacherous mountain terrain.\n    *   **Solution:** Employed
+      the New Austrian Tunneling Methodology (NATM) with blast and benching methods,
+      continuous support with shotcrete and rock bolts, and adapting excavation based
+      on changing rock formations. Extensive geological investigations and redesigns
+      were undertaken.\n*   **Challenge:** Harsh climate and heavy monsoons causing
+      landslides and damaging approach roads.\n    *   **Solution:** Constructed robust
+      approach roads over nalas and showed resilience in restoring them quickly after
+      damage. Maintained a "Plan B" to ensure tunneling works were unaffected.\n*   **Challenge:**
+      Pandemic-induced delays (COVID-19).\n    *   **Solution:** The construction
+      company managed resources, manpower, and machinery effectively, ensuring all
+      COVID-19 protocols were followed, allowing work to continue and be completed
+      on time. Quality was not sacrificed for speed.\n*   **Challenge:** Difficulties
+      in excavating large-diameter tunnels (up to 13.8 meters) through varied rock
+      types.\n    *   **Solution:** Utilized a two-part excavation process for the
+      tunnel face (heading first, then benching) to manage the large cross-section
+      and ensure smooth tunneling.\n*   **Challenge:** Tunnel overburden varying significantly
+      (20m to 800m), causing deformation.\n    *   **Solution:** Adapted support systems
+      and designs at every step to counteract deformation.\n*   **Challenge:** Working
+      in proximity to existing structures like a powerhouse, requiring an elevated
+      viaduct.\n    *   **Solution:** Constructed an 840-meter Viaduct, the longest
+      on NH21, and opted for piling for foundations due to space constraints and proximity
+      to the powerhouse and river.\n*   **Challenge:** Water ingress and loose materials
+      within tunnels (e.g., Atal Tunnel example).\n    *   **Solution:** Employed
+      consolidating grouting and adapted support systems to stabilize the ground and
+      manage water.\n*   **Challenge:** Squeezing problems in tunnels requiring profiling
+      work.\n    *   **Solution:** Implemented extensive profiling work and made significant
+      alignment changes (three times) with re-investigations to overcome these issues.\n*   **Challenge:**
+      Achieving project timelines with multiple simultaneous tunnel excavations.\n    *   **Solution:**
+      Simultaneously excavated 42 tunnels and two single-tube tunnels, demonstrating
+      remarkable project management.\n\n## Lessons Learned:\n\n*   **Adaptability
+      is Crucial:** The project\''s success hinges on the ability to adapt excavation
+      methods, support systems, and designs in response to highly variable and challenging
+      geological conditions.\n*   **Meticulous Planning Prevents Delays:** Careful
+      and extensive planning at every stage is essential to navigate uncertainties
+      and ensure project completion within stipulated timelines.\n*   **Resilience
+      in the Face of Adversity:** The team\''s determination to overcome challenges
+      like monsoons, landslides, and pandemics, without compromising quality, is a
+      key takeaway.\n*   **Importance of Skilled Workforce:** Having the "right people
+      with the right mindset" is vital for tackling complex and morale-damaging challenges.\n*   **Innovation
+      in Tunneling:** The adoption of advanced techniques like NATM and the construction
+      of exceptionally large-diameter tunnels demonstrate a commitment to pushing
+      engineering boundaries.\n*   **Safety as a Priority:** Achieving over 20 million
+      safe man-hours, even amidst hazardous conditions, underscores the importance
+      of safety protocols and a strong safety culture.\n*   **Long-Term Vision:**
+      Designing structures for a 100-year lifespan highlights the importance of durable
+      and sustainable infrastructure development.\n*   **Collaboration is Key:** Support
+      and cooperation from government and local authorities were instrumental in the
+      project\''s successful completion.</answer>\n\nPlease indicate whether the answer
+      contains information that is relevant to the question using only the following
+      json format. Do not use any markdown formatting or output additional lines.\n{\n  "rationale":
+      "Reason for the assessment. If the answer does not provide any information that
+      is relevant to the question then state which parts are not relevant. Start each
+      rationale with `Let\''s think step by step`",\n  "result": "yes|no"\n}\n`result`
+      must only be `yes` or `no`.''}]}]}.
+
+      '
+  value: null
+last_update_time: '2026-04-08T12:46:01.969Z'
+metadata:
+  mlflow.assessment.sourceRunId: 4af3da10153642e7877fb87ac1d79071
+source:
+  source_id: relevance_to_query
+  source_type: CODE
+span_id: 81a65c1ba9487b7e
+trace_id: tr-27ff8f7940fb265edc7e9e94e6d1ef5c
+valid: true
